@@ -1,0 +1,49 @@
+
+.download {
+  padding: 90px 0 100px;
+  background-color: #f5f6f7;
+text-align: center;
+  &_title {
+    color: #373737;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  &_desc {
+    margin: 20px auto 50px;
+    max-width: 840px;
+    color: #373737;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+  }
+  &_button-wrap{
+    display: flex;
+    justify-content: center;
+  }
+  &_button{
+    margin: 0 10px;
+    flex-basis: 30%;
+    padding: 20px 80px 20px 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    border-radius: 3px 0 0 3px;
+    background-color: #1abc9c;
+  }
+}
+@media only screen and(max-width: 420px){
+  .download{
+    &_button-wrap{
+      flex-flow: column nowrap;
+    }
+    &_button{
+      margin: 20px auto;
+      width: 80%;
+    }
+  }
+}

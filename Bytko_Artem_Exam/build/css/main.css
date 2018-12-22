@@ -1,0 +1,406 @@
+.header {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  left: 0;
+  box-sizing: border-box; }
+
+.logo {
+  padding: 0 0 15px; }
+
+.menu {
+  text-align: right;
+  display: inline-block; }
+
+.menu__icon {
+  display: none;
+  width: 21px;
+  height: 15px;
+  position: relative;
+  cursor: pointer; }
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out; }
+
+.menu__links {
+  display: inline-block; }
+
+.links-block {
+  margin: 0 50px;
+  display: inline-block; }
+  .links-block:last-child {
+    margin-right: 0; }
+
+.menu__icon span:nth-child(1) {
+  top: 0; }
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 7px; }
+
+.menu__icon span:nth-child(4) {
+  top: 15px; }
+
+.menu__links-item {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  padding: 40px 10px 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px; }
+  .menu__links-item_home:hover {
+    background-color: #74c7d5; }
+  .menu__links-item_service:hover {
+    background-color: #df5c64; }
+  .menu__links-item_about:hover {
+    background-color: #91778e; }
+  .menu__links-item_work:hover {
+    background-color: #a1ca6c; }
+  .menu__links-item_contact:hover {
+    background-color: #82c8bd; }
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%; }
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg); }
+
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+.menu.menu_state_open .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%; }
+
+.menu.menu_state_open .menu__links {
+  display: inline-block; }
+
+.menu.menu_state_open .menu__links-item {
+  padding: 15px; }
+
+@media only screen and (max-width: 900px) {
+  .header {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 15px; }
+  .menu__icon {
+    display: inline-block; }
+  .logo {
+    padding: 0; }
+  .menu__links {
+    display: none; }
+  .menu.menu_state_open .menu__links {
+    margin-top: 72px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .menu.menu_state_open .menu__links .links-block {
+      display: block;
+      text-align: center;
+      margin: 0; }
+  .menu.menu_state_open .menu__links {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto; } }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none; }
+
+input, textarea, button {
+  outline: 0; }
+
+.section-title {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.wrap {
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box; }
+
+.desc {
+  color: #373737;
+  font-size: 12px;
+  letter-spacing: 1.8px; }
+
+@media only screen and (max-width: 320px) {
+  .header {
+    flex-flow: column nowrap; } }
+
+.home-section {
+  padding: 340px 0 15px;
+  background-image: url("../img/Livello_1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; }
+
+.home_title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.4px; }
+
+.home_desc {
+  margin: 15px 0 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.4px; }
+
+.button {
+  padding: 20px 30px;
+  border-radius: 3px;
+  background-color: #16a085;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px; }
+
+.home_social-list {
+  margin-top: 220px; }
+
+.home_social-items {
+  color: #fff; }
+
+.next-section {
+  padding-top: 100px;
+  background-color: #f5f6f7; }
+  .next-section .wrap {
+    display: flex;
+    flex-flow: row wrap; }
+
+.next_text-block {
+  flex-basis: 40%; }
+
+.next_img-block {
+  flex-basis: 60%; }
+
+.next_desc {
+  padding: 50px 0; }
+
+.next_img-block img {
+  width: 100%; }
+
+.block-title {
+  color: #16a085;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.7px; }
+
+@media only screen and (max-width: 950px) {
+  .next-section .wrap {
+    flex-flow: column wrap;
+    align-items: center; }
+  .next_text-block {
+    width: 50%; }
+  .next_img-block {
+    margin-top: 20px;
+    width: 80%; } }
+
+.design-section {
+  padding-top: 150px; }
+  .design-section .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap; }
+
+.design_img-block, .design_text-block {
+  flex-basis: 33%; }
+
+.design_img-block img {
+  width: 100%; }
+
+.design_desc {
+  margin: 40px 0; }
+
+.design_carousel_arrows {
+  margin-top: 65px;
+  color: #373737;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px; }
+
+.number {
+  font-size: 12px;
+  margin-right: 10px;
+  display: block; }
+
+.arrow {
+  margin: 10px 0;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 700; }
+  .arrow_1 {
+    margin-right: 12px; }
+
+@media only screen and (max-width: 950px) {
+  .design-section .wrap {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap; }
+  .design_img-block {
+    margin-bottom: 20px;
+    width: 60%; } }
+
+.community-section {
+  padding: 95px 0 120px;
+  background-color: #f5f6f7; }
+
+.community_arrows-wrapper {
+  display: block;
+  text-align: right; }
+
+.community_list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap; }
+
+.community_text-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center; }
+
+.community_title {
+  margin: 30px 0 25px;
+  color: #373737;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px; }
+
+.community_desc {
+  max-width: 140px;
+  color: #373737;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px; }
+
+.community_list-items {
+  flex-basis: 33%; }
+
+.community_img img {
+  width: 100%; }
+
+@media only screen and (max-width: 850px) {
+  .community_list {
+    flex-flow: column nowrap;
+    align-items: center; }
+  .community_list-items {
+    margin: 20px 0;
+    width: 80%; } }
+
+.subscribe-section {
+  padding: 350px 0 325px;
+  background-image: url("../img/Livello_3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.form {
+  text-align: center; }
+  .form_title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  .form_input-label {
+    flex-basis: 50%;
+    display: inline-flex;
+    margin-top: 35px; }
+  .form_email-input {
+    padding: 25px 130px 25px 20px;
+    color: #373737;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2.4px; }
+  .form_submit-button {
+    color: #fff;
+    font-size: 20px;
+    padding: 24px 20px;
+    border-radius: 0 3px 3px 0;
+    background-color: #16a085; }
+
+@media only screen and (max-width: 420px) {
+  .form_email-input {
+    flex-basis: 90%;
+    padding-right: 50px; } }
+
+@media only screen and (max-width: 330px) {
+  .form_email-input {
+    flex-basis: 90%;
+    padding-right: 0; } }
+
+.download {
+  padding: 90px 0 100px;
+  background-color: #f5f6f7;
+  text-align: center; }
+  .download_title {
+    color: #373737;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .download_desc {
+    margin: 20px auto 50px;
+    max-width: 840px;
+    color: #373737;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.8px; }
+  .download_button-wrap {
+    display: flex;
+    justify-content: center; }
+  .download_button {
+    margin: 0 10px;
+    flex-basis: 30%;
+    padding: 20px 80px 20px 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    border-radius: 3px 0 0 3px;
+    background-color: #1abc9c; }
+
+@media only screen and (max-width: 420px) {
+  .download_button-wrap {
+    flex-flow: column nowrap; }
+  .download_button {
+    margin: 20px auto;
+    width: 80%; } }
